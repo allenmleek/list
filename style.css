@@ -1,0 +1,31 @@
+/* Create an ordered list of all students
+first student : font-size = 20px/ text-color: red/ border: 1px solid blue( on hover text should change to green)
+last student : font-size = 10px/ text-color: silver/ border: 1px solid grey( on hover text should change to blue)
+Your name : font-size = 30px/ text-color: purple/ border: 1px solid green( on hover text should change to red) */
+
+OL :first-child {
+    font-size: 20px;
+    color: red;
+}
+
+OL :last-child {
+    font-size: 10px;
+    color: silver;
+}
+
+OL :first-child:hover {
+    font-size: 20px;
+    color: green;
+}
+
+OL :last-child:hover {
+    font-size: 20px;
+    color:blue;
+}
+
+OL :nth-child(2):hover {
+    font-size: 30px;
+    color: purple;
+    border:1px solid green;
+}
+
